@@ -1,36 +1,36 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
 /* Variables */
 :root {
     /* Color palette */
-    /* Theme 1 a*/
-    --main-background: hsl(222, 26%, 31%);
-    --toggle-and-keypad-background: hsl(223, 31%, 20%);
-    --display-background: hsl(224, 36%, 15%);
+    /* Light mode */
+    --c-lm-very-dark-blue: hsl(200, 15%, 8%);
+    --c-lm-dark-gray: hsl(0, 0%, 52%);
+    --c-lm-very-light-gray: hsl(0, 0%, 98%);
 
-    --key-background-1: hsl(225, 21%, 49%);
-    --key-shadow-1: hsl(224, 28%, 35%);
-    --key-background-2: hsl(6, 63%, 50%);
-    --key-shadow-2: hsl(6, 70%, 34%);
-    --key-background-3: hsl(30, 25%, 89%);
-    --key-shadow-3: hsl(28, 16%, 65%);
-
-    --text-color-1: hsl(0, 0%, 99%);
-    --text-color-2: hsl(221, 14%, 31%);
-    --box-shadow: hsla(210, 75%, 27%, 0.1);
+    /* Dark mode */
+    --c-dm-dark-blue: hsl(209, 23%, 22%);
+    --c-dm-very-dark-blue-bgc: hsl(207, 26%, 17%);
+    
+    /* Other colors */
+    --c-box-shadow: hsla(210, 75%, 27%, 0.1);
+    --c-white: hsl(0, 0%, 100%);
 
     /* Typography */
-    --primary-font: 'Spartan', sans-serif;
+    --ff-primary-font: 'Nunito Sans', sans-serif;
 
-    --number-font-size: 32px;
+    --fs-homepage-items: 14px;
+    --fs-details-page: 16px;
 
-    --font-weigth-bold: 700;
+    --fw-300: 300;
+    --fw-600: 600;
+    --fw-800: 800;
 
-    --atributtion-font-size: 0.6875rem;
-    --link-color: hsl(228, 45%, 44%);
+    --fs-atributtion: 0.6875rem;
+    --c-link-color: hsl(228, 45%, 44%);
 
-    font-size: 18px;
+    font-size: var(--fs-homepage-items);
 }
 
 /* Reusable Code */
@@ -53,12 +53,11 @@
 }
 
 body {
-    font-family: var(--primary-font);
-    background-color: var(--main-background);
+    font-family: var(--ff-primary-font);
+    background-color: var(--c-lm-very-light-gray);
 }
 
 a {
-    color: var(--text-color-1); 
     text-decoration: none;
 }
 
@@ -74,10 +73,9 @@ button {
 
 
 /* Layout */
-
 .App {
-   background-color: hotpink;
+
 }
 
 /* Modules */
-@import "./Header";
+// @import "./Header";
