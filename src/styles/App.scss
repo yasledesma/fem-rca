@@ -78,4 +78,8 @@ button {
 }
 
 /* Modules */
-// @import "./Header";
+@import "./Header";
+@import "./Content";
+@import "./SearchBar";
+@import "./Filter";
+@import "./Country";
