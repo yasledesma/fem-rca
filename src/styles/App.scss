@@ -42,6 +42,12 @@
     gap: $gap;
 }
 
+@mixin gridContainer($grid, $templateColumns, $gap) {
+    display: $grid;
+    gap: $gap;
+    grid-template-columns: $templateColumns;
+}
+
 /* Mobile 320px */
 /* Base */
 *,

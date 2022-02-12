@@ -1,3 +1,51 @@
 .Header {
+    @include flexContainer(row, center, center, 0);
+    width: 100%;
+    min-height: fit-content;
+    box-shadow: 0 9px 20px 0px hsl(0, 0%, 52%, 0.2);
+    text-align: center;
 
+    &__header{
+        @include flexContainer(row, center, space-between, 4rem);
+        width: min(80%, 70rem);
+        padding-block: 5rem;    
+    }
+
+    &__title {  
+        font-size: min(2rem, 2.5rem);
+    }
+
+    &__theme {
+        @include flexContainer(column, center, center, .5rem);
+
+        &__btn {
+
+            &__img {
+                width: 2rem;
+            }
+        }
+
+        &__span {
+            font-weight: var(--fw-600);
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Header {
+        &__theme {
+            &__span {
+                font-size: var(--fs-homepage-items);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Header {
+        &__theme {
+            flex-direction: row;
+        }
+    }
 }
