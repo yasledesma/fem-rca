@@ -1,3 +1,33 @@
-.Filter {
+.Filter { 
+    @include flexContainer(column, center, center, 0);
 
+    &__wrapper {
+        @include gridContainer(grid, repeat(2, 1fr), 3rem);
+        background-color: var(--c-white);
+        width: min-content;
+        min-height: 4rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: .3rem;
+        box-shadow: 3px 4px 32px 1px hsl(0, 0%, 52%, 0.2);
+
+        &__description {
+            font-size: var(--fs-details-page);
+            font-weight: var(--fw-600);
+            width: max-content;
+            padding-inline-start: 2rem;
+        }
+
+        &__btn {
+            width: fit-content;
+            padding-inline-end: 2rem;
+
+            &__img {
+                width: 2rem;
+            }
+        }
+    }
 }
+
+/* Partials */
+@import "./FilterOptions";

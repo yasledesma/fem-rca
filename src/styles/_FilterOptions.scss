@@ -1,0 +1,21 @@
+.FilterOptions {
+    background-color: var(--c-white);
+    width: 240.734px;
+    margin-block: .5rem;
+    border-radius: .3rem;
+
+    &__list {
+        padding-inline: 2rem;
+        padding-block: 1.5rem;
+
+        &__element {
+            padding-block: .5rem;
+            font-size: var(--fs-details-page);
+            font-weight: var(--fw-600);
+
+            &:hover {
+                background-color: hotpink;
+            }
+        }
+    }
+}

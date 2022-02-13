@@ -1,3 +1,38 @@
 .SearchBar {
+    @include flexContainer(row, center, center, 0);
 
+    &__form {
+        @include gridContainer(grid, (repeat(5, 1fr)), .5rem);
+        justify-content: center;
+        width: min(90%, 25rem);
+        padding-block: 2.5rem;
+
+        &__btn{
+            width: fit-content;
+            grid-column: 1/2;
+            grid-row: 1;
+            z-index: 10;
+            padding-inline: 1.5rem;
+
+            &__img{
+                width: 2rem;
+            }
+        }
+
+        &__input {
+            min-height: 4rem;
+            grid-column: 1/6;
+            grid-row: 1;
+            border-radius: .3rem;
+            border: none;
+            background-color: var(--c-white);
+            padding-inline-start: 5.5rem;
+            padding-inline-end: 2rem;
+            box-shadow: 3px 4px 32px 1px hsl(0, 0%, 52%, 0.2);
+
+            &::placeholder {
+                color: var(--c-lm-dark-gray); 
+            }
+        }
+    }
 }
