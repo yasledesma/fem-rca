@@ -1,12 +1,33 @@
 .Country {
-    width: fit-content;
+    margin: 0 auto;
+    width: 20vw;
     background-color: var(--c-white);
+    border-radius: .3rem;
+    box-shadow: 3px 4px 32px 0px hsl(0, 0%, 52%, 0.2);
 
     &__flag {
-
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+        width: inherit;
+        height: auto;
     }
 
     &__info {
-        background-color: hotpink;
+        margin: 0 auto;
+        width: 80%;
+        padding: 1rem 0 2.8rem 0;
+
+        &__name {
+            padding-bottom: 1rem;
+        }
+
+        &__data {
+            padding-bottom: .3rem;
+            font-size: var(--fs-details-page);
+
+            & > span {
+                font-weight: var(--fw-800);
+            }
+        }
     }
 }

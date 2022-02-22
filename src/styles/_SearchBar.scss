@@ -1,6 +1,4 @@
 .SearchBar {
-    @include flexContainer(row, center, center, 0);
-
     &__form {
         @include gridContainer(grid, (repeat(5, 1fr)), .5rem);
         justify-content: center;

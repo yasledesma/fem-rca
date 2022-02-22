@@ -1,6 +1,4 @@
 .Filter { 
-    @include flexContainer(column, center, center, 0);
-
     &__wrapper {
         @include gridContainer(grid, repeat(2, 1fr), 3rem);
         background-color: var(--c-white);
