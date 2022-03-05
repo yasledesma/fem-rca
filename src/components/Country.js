@@ -1,14 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import AppContext from './AppContext';
 
 const Country = () => {
+  const { info } = useContext(AppContext);
+
   return (
     <div className='Country'>
       <img className='Country__flag' src="" alt="Flag of Germany"></img>
       <div className='Country__info'>
-        <h2 className='Country__info__name'>Germany</h2>
-        <div className='Country__info__data'><span>Population:</span> 80.000</div>
-        <div className='Country__info__data'><span>Region:</span> Europe</div>
-        <div className='Country__info__data'><span>Capital:</span> Berlin</div>
+        <h2 className='Country__info__name'>-</h2>
+        <div className='Country__info__data'><span>Population: </span></div>
+        <div className='Country__info__data'><span>Region: </span></div>
+        <div className='Country__info__data'><span>Capital: </span></div>
       </div>
     </div>
   );
